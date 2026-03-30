@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  font-family:'Segoe UI';
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Custom utility for the hollow text effect */
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px currentColor;
+}
+
+/* Ensure smooth scrolling for the navbar links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base font settings */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
