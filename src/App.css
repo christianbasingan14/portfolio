@@ -242,12 +242,13 @@
 
 .nav-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100vw; /* Ensure it never exceeds the screen width */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px; /* This creates the "safe zone" so the burger isn't touching the glass edge */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box; /* Crucial: ensures padding doesn't add to the width */
 }
 
 /* --- Controls (Theme & Burger) --- */
@@ -322,4 +323,9 @@
     right: 0; 
     margin-right: 4px;
   }
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* This hides the "black screen" gap on the right */
+  position: relative;
 }

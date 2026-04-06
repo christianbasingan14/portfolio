@@ -41,15 +41,14 @@ const App = () => {
     <div className={`transition-all duration-700 min-h-screen font-inter ${
       darkMode ? "bg-black text-white" : "bg-white text-black"
     }`}>
-      
       <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
 
       {/* --- HERO SECTION --- */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="text-center z-10 px-4">
-          <h1 data-aos="zoom-out" className="font-syne text-7xl md:text-9xl font-extrabold uppercase tracking-tighter leading-none">
-            Christian. <br /> 
-          </h1>
+          <h1 data-aos="zoom-out" className="font-syne text-5xl md:text-9xl font-extrabold uppercase ...">
+  Christian. <br />
+</h1>
           <p data-aos="fade-up" data-aos-delay="300" className="mt-6 text-lg md:text-xl uppercase tracking-[0.3em] opacity-70">
               Creative Developer & UI Designer
           </p>
@@ -62,15 +61,14 @@ const App = () => {
           <h2 className="font-syne text-5xl font-bold uppercase mb-6">I am Christian.</h2>
           <p className="text-lg leading-relaxed opacity-80">
             I am a Ojt Intern and Aspiring to be an <span className="font-bold">Front End Developer</span> and <span className="font-bold">UI Designer</span>.
-            Like Yin and Yang, a great website needs the structure of clean code and the fluidity of bold design. 
+            Like Yin and Yang, a great website needs the structure of clean code and the fluidity of bold design.
           </p>
         </div>
-        
         <div data-aos="fade-left" className="relative flex justify-center items-center">
             <div className={`absolute w-72 h-72 rounded-full blur-3xl opacity-20 ${darkMode ? 'bg-white' : 'bg-black'}`}></div>
-            <img 
-              src="/christian-Photoroom.png" 
-              alt="Christian" 
+            <img
+              src="/christian-Photoroom.png"
+              alt="Christian"
               className="relative z-10 w-full max-w-md grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
             />
         </div>
@@ -95,18 +93,17 @@ const App = () => {
       {/* --- FOOTER & CONTACT FORM --- */}
       <footer id="contact" className={`py-20 text-center transition-colors ${darkMode ? 'bg-white text-black' : 'bg-black text-white'}`}>
         <h2 data-aos="zoom-in" className="font-syne text-6xl md:text-8xl font-black uppercase tracking-tighter">Let's Talk</h2>
-        
         {/* The Contact Form Component */}
         <ContactForm darkMode={darkMode} />
 
         <p className="mt-12 font-inter uppercase tracking-widest font-bold">Christianbasingan14@gmail.com</p>
-        
+
         <div className="mt-12 flex justify-center gap-8 font-syne font-bold text-sm">
           <a href="https://www.instagram.com/chiyannn_14/" target="_blank" rel="noreferrer" className="hover:line-through transition-all">INSTAGRAM</a>
           <a href="https://github.com/christianbasingan14" target="_blank" rel="noreferrer" className="hover:line-through transition-all">GITHUB</a>
           <a href="https://www.facebook.com/worrystitch" target="_blank" rel="noreferrer" className="hover:line-through transition-all">FACEBOOK</a>
         </div>
-        
+
         <p className="mt-10 text-[10px] opacity-50 uppercase tracking-[0.5em]">© 2026 Christian • FRONT END DEVELOPER</p>
       </footer>
     </div>
