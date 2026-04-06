@@ -226,7 +226,6 @@
   right: 0;
   border-right-color: var(--border);
 }
-/* --- Navbar Container --- */
 .navbar {
   position: fixed;
   top: 0;
@@ -234,7 +233,8 @@
   background: var(--social-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
-  z-index: 100;
+  z-index: 9999 !important; /* Force it to the very front */
+  /* ... other styles */
   height: 64px;
   display: flex;
   align-items: center;
@@ -267,9 +267,15 @@
   align-items: center;
 }
 
-/* Hide Burger on Desktop */
 .burger-button {
-  display: none;
+  display: block;
+  width: 44px;  /* Apple's recommended minimum touch target */
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1); /* Temporary: remove this once you see it */
 }
 
 /* --- Nav Links --- */
